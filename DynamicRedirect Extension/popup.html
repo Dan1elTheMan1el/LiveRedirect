@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveRedirector</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        <img class="icon" src="images/icon-48.png" alt="icon"/>
+        <div>
+          <h1>LiveRedirector</h1>
+          <p class="subtitle">Open matching pages in LiveContainer</p>
+        </div>
+      </div>
+      <button id="export" class="icon-btn" title="Export to clipboard">Export</button>
+    </div>
+
+    <div class="controls">
+      <input id="domain" type="text" placeholder="Add URL or domain (e.g. youtube.com)" autocapitalize="none" />
+      <button id="add" class="btn primary">Add</button>
+    </div>
+    <div class="actions">
+      <button id="import" class="btn">Import from clipboard</button>
+      <button id="clearAll" class="btn danger">Clear all</button>
+    </div>
+
+    <ul id="list" class="list"></ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

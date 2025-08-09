@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Xcode
+*.xcuserstate
+xcuserdata/
+
+# Xcode workspace autosave state
+**/project.xcworkspace/xcuserdata/

@@ -1,0 +1,70 @@
+:root {
+  --bg: #0f1115;
+  --surface: #161a20;
+  --border: #2a2f3a;
+  --text: #e7e9ee;
+  --muted: #9aa4b2;
+  --accent: #4f8cff;
+  --danger: #ff6b6b;
+}
+
+:root[data-theme='light'] {
+  --bg: #ffffff;
+  --surface: #f3f5f7;
+  --border: #d8dee6;
+  --text: #0b1220;
+  --muted: #5b6678;
+  --accent: #3b6ed6;
+  --danger: #d94b4b;
+}
+
+html, body {
+  padding: 0; margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.4 -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container { min-width: 300px; max-width: 420px; padding: 12px; }
+
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.title { display: flex; gap: 10px; align-items: center; }
+.title h1 { font-size: 16px; margin: 0; }
+.subtitle { margin: 0; font-size: 12px; color: var(--muted); }
+.icon { width: 24px; height: 24px; border-radius: 6px; }
+
+.controls { display: grid; grid-template-columns: 1fr auto; gap: 8px; margin: 8px 0; }
+.actions { display: flex; gap: 8px; margin: 6px 0 10px; }
+
+input[type="text"], input { 
+  background: var(--surface); color: var(--text);
+  border: 1px solid var(--border);
+  padding: 9px 10px; border-radius: 10px; outline: none;
+}
+input::placeholder { color: var(--muted); }
+
+.btn { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; }
+.btn.primary { background: var(--accent); color: #fff; border-color: transparent; }
+.btn.danger { background: transparent; color: var(--danger); border-color: var(--border); }
+.btn:active { transform: translateY(1px); }
+
+.icon-btn { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 10px; padding: 6px 8px; }
+
+.list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; max-height: 300px; overflow: auto; }
+.list li { display: flex; align-items: center; justify-content: space-between; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px; }
+.domain { font-weight: 600; }
+
+.footer { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: 12px; color: var(--muted); }
+.status-ok { color: var(--muted); }
+.status-err { color: var(--danger); }
+
+.list button {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  color: var(--danger);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+.list button:active { transform: translateY(1px); }

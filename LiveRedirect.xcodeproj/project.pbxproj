@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		343FD56E2E45AA9D00DCA77E /* LiveRedirect Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 343FD56D2E45AA9D00DCA77E /* LiveRedirect Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		343FD5582E45AA9D00DCA77E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343FD5322E45AA9C00DCA77E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 343FD5392E45AA9C00DCA77E;
+			remoteInfo = DynamicRedirect;
+		};
+		343FD5622E45AA9D00DCA77E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343FD5322E45AA9C00DCA77E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 343FD5392E45AA9C00DCA77E;
+			remoteInfo = DynamicRedirect;
+		};
+		343FD56F2E45AA9D00DCA77E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343FD5322E45AA9C00DCA77E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 343FD56C2E45AA9D00DCA77E;
+			remoteInfo = "DynamicRedirect Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		343FD58C2E45AA9D00DCA77E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				343FD56E2E45AA9D00DCA77E /* LiveRedirect Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		343FD53A2E45AA9C00DCA77E /* LiveRedirect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveRedirect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		343FD5572E45AA9D00DCA77E /* LiveRedirectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveRedirectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		343FD5612E45AA9D00DCA77E /* LiveRedirectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveRedirectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		343FD56D2E45AA9D00DCA77E /* LiveRedirect Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LiveRedirect Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		343FD5872E45AA9D00DCA77E /* Exceptions for "DynamicRedirect" folder in "LiveRedirect" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 343FD5392E45AA9C00DCA77E /* LiveRedirect */;
+		};
+		343FD5B52E45D79100DCA77E /* Exceptions for "DynamicRedirect Extension" folder in "LiveRedirect Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 343FD56C2E45AA9D00DCA77E /* LiveRedirect Extension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		343FD53C2E45AA9C00DCA77E /* DynamicRedirect */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				343FD5872E45AA9D00DCA77E /* Exceptions for "DynamicRedirect" folder in "LiveRedirect" target */,
+			);
+			path = DynamicRedirect;
+			sourceTree = "<group>";
+		};
+		343FD5712E45AA9D00DCA77E /* DynamicRedirect Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				343FD5B52E45D79100DCA77E /* Exceptions for "DynamicRedirect Extension" folder in "LiveRedirect Extension" target */,
+			);
+			explicitFolders = (
+				images,
+			);
+			path = "DynamicRedirect Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		343FD5372E45AA9C00DCA77E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343FD5542E45AA9D00DCA77E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343FD55E2E45AA9D00DCA77E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343FD56A2E45AA9D00DCA77E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		343FD5312E45AA9C00DCA77E = {
+			isa = PBXGroup;
+			children = (
+				343FD53C2E45AA9C00DCA77E /* DynamicRedirect */,
+				343FD5712E45AA9D00DCA77E /* DynamicRedirect Extension */,
+				343FD53B2E45AA9C00DCA77E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		343FD53B2E45AA9C00DCA77E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				343FD53A2E45AA9C00DCA77E /* LiveRedirect.app */,
+				343FD5572E45AA9D00DCA77E /* LiveRedirectTests.xctest */,
+				343FD5612E45AA9D00DCA77E /* LiveRedirectUITests.xctest */,
+				343FD56D2E45AA9D00DCA77E /* LiveRedirect Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		343FD5392E45AA9C00DCA77E /* LiveRedirect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343FD58D2E45AA9D00DCA77E /* Build configuration list for PBXNativeTarget "LiveRedirect" */;
+			buildPhases = (
+				343FD5362E45AA9C00DCA77E /* Sources */,
+				343FD5372E45AA9C00DCA77E /* Frameworks */,
+				343FD5382E45AA9C00DCA77E /* Resources */,
+				343FD58C2E45AA9D00DCA77E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				343FD5702E45AA9D00DCA77E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				343FD53C2E45AA9C00DCA77E /* DynamicRedirect */,
+			);
+			name = LiveRedirect;
+			packageProductDependencies = (
+			);
+			productName = DynamicRedirect;
+			productReference = 343FD53A2E45AA9C00DCA77E /* LiveRedirect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		343FD5562E45AA9D00DCA77E /* LiveRedirectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343FD5922E45AA9D00DCA77E /* Build configuration list for PBXNativeTarget "LiveRedirectTests" */;
+			buildPhases = (
+				343FD5532E45AA9D00DCA77E /* Sources */,
+				343FD5542E45AA9D00DCA77E /* Frameworks */,
+				343FD5552E45AA9D00DCA77E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				343FD5592E45AA9D00DCA77E /* PBXTargetDependency */,
+			);
+			name = LiveRedirectTests;
+			packageProductDependencies = (
+			);
+			productName = DynamicRedirectTests;
+			productReference = 343FD5572E45AA9D00DCA77E /* LiveRedirectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		343FD5602E45AA9D00DCA77E /* LiveRedirectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343FD5952E45AA9D00DCA77E /* Build configuration list for PBXNativeTarget "LiveRedirectUITests" */;
+			buildPhases = (
+				343FD55D2E45AA9D00DCA77E /* Sources */,
+				343FD55E2E45AA9D00DCA77E /* Frameworks */,
+				343FD55F2E45AA9D00DCA77E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				343FD5632E45AA9D00DCA77E /* PBXTargetDependency */,
+			);
+			name = LiveRedirectUITests;
+			packageProductDependencies = (
+			);
+			productName = DynamicRedirectUITests;
+			productReference = 343FD5612E45AA9D00DCA77E /* LiveRedirectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		343FD56C2E45AA9D00DCA77E /* LiveRedirect Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343FD5882E45AA9D00DCA77E /* Build configuration list for PBXNativeTarget "LiveRedirect Extension" */;
+			buildPhases = (
+				343FD5692E45AA9D00DCA77E /* Sources */,
+				343FD56A2E45AA9D00DCA77E /* Frameworks */,
+				343FD56B2E45AA9D00DCA77E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				343FD5712E45AA9D00DCA77E /* DynamicRedirect Extension */,
+			);
+			name = "LiveRedirect Extension";
+			packageProductDependencies = (
+			);
+			productName = "DynamicRedirect Extension";
+			productReference = 343FD56D2E45AA9D00DCA77E /* LiveRedirect Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		343FD5322E45AA9C00DCA77E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					343FD5392E45AA9C00DCA77E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					343FD5562E45AA9D00DCA77E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 343FD5392E45AA9C00DCA77E;
+					};
+					343FD5602E45AA9D00DCA77E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 343FD5392E45AA9C00DCA77E;
+					};
+					343FD56C2E45AA9D00DCA77E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 343FD5352E45AA9C00DCA77E /* Build configuration list for PBXProject "LiveRedirect" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 343FD5312E45AA9C00DCA77E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 343FD53B2E45AA9C00DCA77E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				343FD5392E45AA9C00DCA77E /* LiveRedirect */,
+				343FD5562E45AA9D00DCA77E /* LiveRedirectTests */,
+				343FD5602E45AA9D00DCA77E /* LiveRedirectUITests */,
+				343FD56C2E45AA9D00DCA77E /* LiveRedirect Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		343FD5382E45AA9C00DCA77E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343FD5552E45AA9D00DCA77E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343FD55F2E45AA9D00DCA77E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343FD56B2E45AA9D00DCA77E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		343FD5362E45AA9C00DCA77E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343FD5532E45AA9D00DCA77E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343FD55D2E45AA9D00DCA77E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343FD5692E45AA9D00DCA77E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		343FD5592E45AA9D00DCA77E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 343FD5392E45AA9C00DCA77E /* LiveRedirect */;
+			targetProxy = 343FD5582E45AA9D00DCA77E /* PBXContainerItemProxy */;
+		};
+		343FD5632E45AA9D00DCA77E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 343FD5392E45AA9C00DCA77E /* LiveRedirect */;
+			targetProxy = 343FD5622E45AA9D00DCA77E /* PBXContainerItemProxy */;
+		};
+		343FD5702E45AA9D00DCA77E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 343FD56C2E45AA9D00DCA77E /* LiveRedirect Extension */;
+			targetProxy = 343FD56F2E45AA9D00DCA77E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		343FD5892E45AA9D00DCA77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U7F3SL584;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DynamicRedirect Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DynamicRedirect Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danielthemaniel.DynamicRedirect.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		343FD58A2E45AA9D00DCA77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U7F3SL584;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DynamicRedirect Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DynamicRedirect Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danielthemaniel.DynamicRedirect.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		343FD58E2E45AA9D00DCA77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DynamicRedirect/DynamicRedirect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U7F3SL584;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynamicRedirect/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveRedirector;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danielthemaniel.DynamicRedirect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		343FD58F2E45AA9D00DCA77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DynamicRedirect/DynamicRedirect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U7F3SL584;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynamicRedirect/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveRedirector;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danielthemaniel.DynamicRedirect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		343FD5902E45AA9D00DCA77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5U7F3SL584;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		343FD5912E45AA9D00DCA77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5U7F3SL584;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		343FD5932E45AA9D00DCA77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U7F3SL584;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = danielthemaniel.DynamicRedirectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveRedirect.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveRedirect";
+			};
+			name = Debug;
+		};
+		343FD5942E45AA9D00DCA77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U7F3SL584;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = danielthemaniel.DynamicRedirectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveRedirect.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveRedirect";
+			};
+			name = Release;
+		};
+		343FD5962E45AA9D00DCA77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U7F3SL584;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = danielthemaniel.DynamicRedirectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DynamicRedirect;
+			};
+			name = Debug;
+		};
+		343FD5972E45AA9D00DCA77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U7F3SL584;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = danielthemaniel.DynamicRedirectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DynamicRedirect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		343FD5352E45AA9C00DCA77E /* Build configuration list for PBXProject "LiveRedirect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343FD5902E45AA9D00DCA77E /* Debug */,
+				343FD5912E45AA9D00DCA77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		343FD5882E45AA9D00DCA77E /* Build configuration list for PBXNativeTarget "LiveRedirect Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343FD5892E45AA9D00DCA77E /* Debug */,
+				343FD58A2E45AA9D00DCA77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		343FD58D2E45AA9D00DCA77E /* Build configuration list for PBXNativeTarget "LiveRedirect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343FD58E2E45AA9D00DCA77E /* Debug */,
+				343FD58F2E45AA9D00DCA77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		343FD5922E45AA9D00DCA77E /* Build configuration list for PBXNativeTarget "LiveRedirectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343FD5932E45AA9D00DCA77E /* Debug */,
+				343FD5942E45AA9D00DCA77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		343FD5952E45AA9D00DCA77E /* Build configuration list for PBXNativeTarget "LiveRedirectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343FD5962E45AA9D00DCA77E /* Debug */,
+				343FD5972E45AA9D00DCA77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 343FD5322E45AA9C00DCA77E /* Project object */;
+}
