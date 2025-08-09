@@ -1,24 +1,10 @@
 <p align="center">
-  <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="LiveRedirector icon">
-    <defs>
-      <!-- Rounded-rectangle (squircle-like) clip for the icon -->
-      <clipPath id="lr-squircle">
-        <rect x="0" y="0" width="96" height="96" rx="22" ry="22" />
-      </clipPath>
-    </defs>
-    <image xlink:href="DynamicRedirect%20Extension/images/icon-128.png" href="DynamicRedirect%20Extension/images/icon-128.png" width="96" height="96" clip-path="url(#lr-squircle)" preserveAspectRatio="xMidYMid slice" />
-  </svg>
+  <img src="DynamicRedirect%20Extension/images/icon-128.png" alt="LiveRedirector icon" width="96" height="96" />
 </p>
 
 # LiveRedirector
 
 Open matching webpages in [LiveContainer](https://github.com/LiveContainer/LiveContainer) from Safari on iOS using a lightweight Safari Web Extension.
-
-<p align="center">
-  <video src="demo.mov" width="280" controls playsinline muted loop style="border-radius:12px;">
-    Your browser does not support the video tag. 
-  </video>
-</p>
 
 ## What it does
 - Lets you maintain a list of URL or domain patterns (e.g., `discord.com/invite`, `youtube.com`).
