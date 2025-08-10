@@ -11,6 +11,24 @@ async function loadMappings() {
   });
 }
 
+async function loadAutoRedirect() {
+  return await new Promise(res => {
+    browser.storage?.local?.get(['autoRedirect'], out => {
+      res(!!out?.autoRedirect);
+    });
+  });
+}
+
+async function saveAutoRedirect(value) {
+  return await new Promise(res => {
+    browser.storage?.local?.set({ autoRedirect: value }, res);
+  });
+}
+
+async function notifyAutoRedirect(value) {
+  try { await new Promise(r => browser.runtime.sendMessage({ action: 'setAutoRedirect', value }, r)); } catch {}
+}
+
 async function saveMappings(list) {
   return await new Promise(res => {
     browser.storage?.local?.set({ urlMatches: list, lastUpdated: Date.now() }, res);
@@ -86,3 +104,14 @@ $('export')?.addEventListener('click', exportToClipboard);
 $('clearAll')?.addEventListener('click', clearAll);
 
 (async function init(){ const list = await loadMappings(); render(list); })();
+
+// Auto redirect toggle logic
+const autoRedirectEl = $('autoRedirect');
+if (autoRedirectEl) {
+  loadAutoRedirect().then(val => { autoRedirectEl.checked = val; });
+  autoRedirectEl.addEventListener('change', async (e) => {
+    await saveAutoRedirect(autoRedirectEl.checked);
+    await notifyAutoRedirect(autoRedirectEl.checked);
+    setStatus(autoRedirectEl.checked ? 'Auto redirect enabled' : 'Auto redirect disabled');
+  });
+}

@@ -50,13 +50,115 @@ function matches(url, patterns) {
 function base64(str){ try { return btoa(unescape(encodeURIComponent(str))); } catch { return btoa(str); } }
 
 (function run(){
-  getUrlMatches().then(patterns => {
+
+  Promise.all([
+    getUrlMatches(),
+    browser.runtime.sendMessage({ action: 'getAutoRedirect' })
+  ]).then(([patterns, auto]) => {
     if (!patterns.length) { console.log('[LiveRedirector] No URL match patterns configured'); return; }
     const url = location.href;
     if (!matches(url, patterns)) { console.log('[LiveRedirector] No match for', url); return; }
     const encoded = base64(url);
     const target = `livecontainer://open-web-page?url=${encoded}`;
-    console.log('[LiveRedirector] Redirect ->', target);
-    location.href = target;
+
+    // Create floating, draggable button (iOS-focused)
+    const btn = document.createElement('button');
+    btn.id = 'livecontainer-open-btn';
+    btn.style.position = 'fixed'; // don't scroll with the page
+    btn.style.bottom = 'calc(env(safe-area-inset-bottom, 0px) + 24px)';
+    btn.style.right = '16px';
+    btn.style.zIndex = '2147483647';
+    btn.style.padding = '8px 16px 8px 8px';
+    btn.style.background = '#007aff';
+    btn.style.color = '#fff';
+    btn.style.border = 'none';
+    btn.style.borderRadius = '8px';
+    btn.style.boxShadow = '0 2px 8px rgba(0,0,0,0.2)';
+    btn.style.cursor = 'grab';
+    btn.style.fontSize = '16px';
+    btn.style.userSelect = 'none';
+    btn.style.webkitUserSelect = 'none';
+    btn.style.webkitTouchCallout = 'none';
+    btn.style.touchAction = 'none';
+    btn.style.webkitTapHighlightColor = 'rgba(0,0,0,0)';
+    btn.style.display = 'flex';
+    btn.style.alignItems = 'center';
+
+  // Add logo image
+  const img = document.createElement('img');
+  img.src = 'https://github.com/LiveContainer/LiveContainer/raw/main/screenshots/AppIcon1024.png';
+  img.alt = 'LiveContainer Logo';
+  img.style.width = '28px';
+  img.style.height = '28px';
+  img.style.marginRight = '8px';
+  img.style.borderRadius = '6px';
+  btn.appendChild(img);
+
+  // Add text
+  const span = document.createElement('span');
+  span.innerText = 'Open';
+  btn.appendChild(span);
+
+  // iOS touch-only drag/tap logic
+  let isDragging = false, moved = false;
+    let startX = 0, startY = 0, startLeft = 0, startTop = 0;
+    const TAP_THRESHOLD_PX = 6;
+
+    btn.addEventListener('touchstart', (e) => {
+      if (!e.touches || e.touches.length !== 1) return;
+      const t = e.touches[0];
+      const rect = btn.getBoundingClientRect();
+      startX = t.clientX;
+      startY = t.clientY;
+      startLeft = rect.left;
+      startTop = rect.top;
+      isDragging = true;
+      moved = false;
+  // Switch to left/top while keeping fixed positioning
+      btn.style.left = rect.left + 'px';
+      btn.style.top = rect.top + 'px';
+      btn.style.right = '';
+      btn.style.bottom = '';
+      e.preventDefault();
+    }, { passive: false });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging || !e.touches || e.touches.length !== 1) return;
+      const t = e.touches[0];
+      const dx = t.clientX - startX;
+      const dy = t.clientY - startY;
+      if (Math.abs(dx) > TAP_THRESHOLD_PX || Math.abs(dy) > TAP_THRESHOLD_PX) moved = true;
+      btn.style.left = (startLeft + dx) + 'px';
+      btn.style.top = (startTop + dy) + 'px';
+      e.preventDefault();
+    }, { passive: false });
+
+    document.addEventListener('touchend', (e) => {
+      if (!isDragging) return;
+      isDragging = false;
+      // Treat as tap if not moved significantly
+      if (!moved) {
+        // Use the CURRENT URL at tap time to support SPA navigation (e.g., YouTube)
+        const current = location.href;
+        const enc = base64(current);
+        const t = `livecontainer://open-web-page?url=${enc}`;
+        window.location.href = t;
+      }
+    });
+
+  // Optional click handler (desktop or iPad with mouse)
+  btn.addEventListener('click', function(e) {
+    const current = location.href;
+    const enc = base64(current);
+    const t = `livecontainer://open-web-page?url=${enc}`;
+    window.location.href = t;
+  });
+    document.body.appendChild(btn);
+
+    // Only redirect if auto redirect is enabled
+    if (auto && auto.enabled !== false) {
+      console.log('[LiveRedirector] Redirect ->', target);
+      window.location.href = target;
+    }
   });
 })();
