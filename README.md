@@ -6,6 +6,8 @@
 
 Open matching webpages in [LiveContainer](https://github.com/LiveContainer/LiveContainer) from Safari on iOS using a lightweight Safari Web Extension.
 
+# Note: This app might be broken in IOS 26, I'm not sure if I will continue development.
+
 ## What it does
 - Lets you maintain a list of URL or domain patterns (e.g., `discord.com/invite`, `youtube.com`).
 - When a visited page matches, the content script encodes the full URL as Base64 and redirects to:
