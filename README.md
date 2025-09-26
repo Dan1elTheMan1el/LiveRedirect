@@ -6,7 +6,14 @@
 
 Open matching webpages in [LiveContainer](https://github.com/LiveContainer/LiveContainer) from Safari on iOS using a lightweight Safari Web Extension.
 
-# Note: This app might be broken in IOS 26, I'm not sure if I will continue development.
+# Note: iOS 26 broke the Safari extension when sideloading, so use the following guide to setup the new userscript:
+
+- Install [UserScripts](https://apps.apple.com/ca/app/userscripts/id1463298887) for free from the App Store
+- Identify your UserScripts directory
+- Install the LiveRedirector shortcut and select the UserScripts folder during setup
+- Use the shortcut to configure userscript settings
+
+# iOS 18:
 
 ## What it does
 - Lets you maintain a list of URL or domain patterns (e.g., `discord.com/invite`, `youtube.com`).
