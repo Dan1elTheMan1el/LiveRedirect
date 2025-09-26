@@ -8,9 +8,9 @@ Open matching webpages in [LiveContainer](https://github.com/LiveContainer/LiveC
 
 # Note: iOS 26 broke the Safari extension when sideloading, so use the following guide to setup the new userscript:
 
-- Install [UserScripts](https://apps.apple.com/ca/app/userscripts/id1463298887) for free from the App Store
-- Identify your UserScripts directory
-- Install the LiveRedirector shortcut and select the UserScripts folder during setup
+- Install [Userscripts](https://apps.apple.com/ca/app/userscripts/id1463298887) for free from the App Store
+- Identify your Userscripts directory
+- Install the [LiveRedirector shortcut](https://shortcuty.app/api/shortcuts/e9035be5-0dbd-41d0-99c6-3b2f46bcfa45/get) and select the Userscripts folder during setup
 - Use the shortcut to configure userscript settings
 
 # iOS 18:
